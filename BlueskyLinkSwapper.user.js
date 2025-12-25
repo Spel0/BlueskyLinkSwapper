@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Swap bsky copy link to fxbsky
-// @namespace    https://github.com/Spel0/BlueSkyLinkSwapper
+// @namespace    https://github.com/Spel0/BlueskyLinkSwapper
 // @version      1.0
 // @description  Replace `bsky` to `fxbsky` when clicking 'Copy link to post'
 // @author       Spelo
@@ -12,7 +12,7 @@
 (function () {
   "use strict";
 
-  // Check if the clipboardchange event is supported (BlueSky doesn't send copy events)
+  // Check if the clipboardchange event is supported (Bluesky doesn't send copy events)
   if ('onclipboardchange' in navigator.clipboard) {
     // The clipboardchange event is supported (Direct event)
     console.debug("ClipboardChange Event is Supported")
@@ -34,13 +34,13 @@
     });
   }
 
-  // Validate if the text is a valid BlueSky URL
+  // Validate if the text is a valid Bluesky URL
   function isValidBskyUrl(url) {
     const urlRegex = /^https:\/\/(www\.)?bsky\.app\/profile\/.+\/post\/\d+/;
     return urlRegex.test(url);
   }
 
-  // Replace the domain part of the BlueSky URL with 'fxbsky'
+  // Replace the domain part of the Bluesky URL with 'fxbsky'
   function replaceUrl(originalUrl) {
     try {
       let newUrl = originalUrl.replace(/bsky\.app/, "fxbsky.app");
