@@ -25,9 +25,13 @@ To use BlueSkyLinkSwapper, you'll need a userscript manager like Tampermonkey or
 4. Your userscript manager should recognize the script and prompt you to install it.
 5. Follow the instructions provided by your userscript manager to complete the installation.
 
+## Requirements
+
+Clipboard access needs to be enabled on the BlueSky website for the script to work properly. (Enable it once prompted)
+
 ## Usage
 
-Once installed, the script runs automatically. Simply copy a BlueSky post link via the share button as you normally would, and it will be converted to an `fxbsky` link in your clipboard.
+Once installed, the script runs automatically.  Simply copy a BlueSky post link via the share button as you normally would, and it will be converted to an `fxbsky` link in your clipboard.
 
 ## License
 
